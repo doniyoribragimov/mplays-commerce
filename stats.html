@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<title>MPLAYS - Аналитики и управление вашей рекламой для Wildberries и Ozon</title>
+		<link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="css/vanilla-calendar.min.css" />
+        <script src="js/vanilla-calendar.min.js" defer></script>   
+
+	</head>
+	<body>
+
+		<!-- === HEADER === -->
+		<header class="header header_white">
+			<div class="container">
+				<div class="header__inner">
+
+					<div class="header__left">
+						<a class="logo" href="/">
+							<img src="images/logo-bacl.svg" alt="logo">
+						</a>
+
+						<nav class="header__menu">
+							<a class="header__link" href="#">Возможности</a>
+							<a class="header__link" href="#">Отзывы</a>
+							<a class="header__link" href="#">Тарифы</a>
+							<a class="header__link" href="#">Блог</a>
+						</nav>
+					</div>
+
+					<div class="header__right">
+						<nav class="header__socials">
+							<a class="header__socials-link" href="#">
+								<img src="images/tg.svg" alt="socials icon">
+							</a>
+
+							<a class="header__socials-link" href="#">
+								<img src="images/vkk.svg" alt="socials icon">
+							</a>
+
+							<a class="header__socials-link" href="#">
+								<img src="images/ins.svg" alt="socials icon">
+							</a>
+						</nav>
+
+						
+						<div class="header__account">
+							<div class="header__profile">
+								<img class="header__avatar" src="images/profile.png" alt="profile">
+								<img class="header__arrow" src="images/arrow-down.svg" alt="arrow">
+
+							</div>
+
+							<ul class="header__dropdown">
+								<li class="header__item">
+									<a class="header__link" href="#">
+										<div class="header__wrap">
+											<img src="images/account.svg" alt="header icon">
+										</div>
+										Личный кабинет
+									</a>
+								</li>
+
+								<li class="header__item">
+									<a class="header__link" href="#">
+										<div class="header__wrap">
+											<img src="images/dogovor.svg" alt="header icon">
+										</div>
+										Договор
+									</a>
+								</li>
+
+								<li class="header__item">
+									<a class="header__link" href="#">
+										<div class="header__wrap">
+											<img src="images/leave.svg" alt="header icon">
+										</div>
+										Выход
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<img class="header__btn" src="images/menu-btn-d.svg" alt="btn">
+
+				</div>
+			</div>
+		</header>
+
+	
+
+		<div class="container">
+      
+            <div class="breadcrumb breadcrumb_border">
+                <a class="breadcrumb__link" href="#">Главная</a>
+                <div class="breadcrumb__now">Статистика ссылки</div>
+            </div>
+            <div class="stats">
+                <div class="stats__head box">
+                    <div class="stats__top">
+                        <h2 class="content__title">Статистика ссылки</h2>
+                        <div class="stats__product">435367584352-Перчатки лапки черные</div>
+                    </div>
+
+                    <div class="stats__info">
+                        <div class="stats__view">
+                            <div class="stats__item">
+                                <div class="stats__name">Создана:</div>
+                                <div class="stats__named">+7 900 900 90 90</div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Ссылка:</div>
+                                <div class="stats__named stats__named_overflow">
+                                    <a class="link-arrow" href="#">https://www.wildberries.ru/cataloq/75086074/detail.aspx?size=128906237</a>
+                                </div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Откуда:</div>
+                                <div class="stats__named">Конт</div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Клиент:</div>
+                                <div class="stats__named">
+                                    <a class="link-arrow" href="#">Магазин ВБ Диана Ероклинцева</a>
+                                </div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Всего переходов:</div>
+                                <div class="stats__named">441</div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Переходов за указанный период:</div>
+                                <div class="stats__named">345</div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Заказов за указанный период:</div>
+                                <div class="stats__named">106</div>
+                            </div>
+
+                            <div class="stats__item">
+                                <div class="stats__name">Конверсия:</div>
+                                <div class="stats__named">7</div>
+                            </div>
+                        </div>
+                        <div class="stats__action">
+                            <div class="stats__action-date">
+                                <div class="stats__name">От:</div>
+                                <div class="stats__date">01.01.2023, 00:30</div>
+                                <img class="stats-calendar" src="images/calendars.svg" alt="calendar icon">
+                                <form class="calendar-popup aside__calendar">
+                                    <div id="calendar"></div>
+                                    <select name="choosing">
+                                        <option selected disabled>Выбор клиента</option>
+                                        <option>Выбор клиента 1</option>
+                                        <option>Выбор клиента 2</option>
+                                        <option>Выбор клиента 3</option>
+                                    </select>
+            
+                                    <button class="button button_violet">Скачать отчет</button>
+                                </form>
+                            </div>
+                            <div class="stats__action-btns">
+                                <a class="button button_violet" href="#">Получить</a>
+                                <a class="button button_violet" href="#">Скачать номера телефонов</a>
+                                <!-- <div class="stats-more">
+                                    <img class="more" src="images/more.svg" alt="more icon">
+
+                                    <ul class="table__dropdown table__dropdown_white">
+                                        <li class="table__li">
+                                            <img src="images/edit.svg" alt="edit icon">
+                                            Редактировать
+                                        </li>
+        
+                                        <li class="table__li">
+                                            <img src="images/delete.svg" alt="delete icon">
+                                            Удалить
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats__body box">
+                    <div class="stats__btns">
+                        <div id="converseBtn" class="button button_violet">Конверсия</div>
+                        <div id="powerUpBtn" class="button button_outline">Выгрузка</div>
+                        <div class="button button_white">Аудитория</div>
+                    </div>
+
+                    <div class="stats__content" id="tableMain">
+                        <div class="stats__graphs">
+                            <div class="chart chart-first">
+                                <canvas id="lineChart"></canvas>
+                            </div>
+                            
+                            <div class="chart chart-second">
+                                <canvas id="lineChart2"></canvas>
+                            </div>
+                            
+                            <div class="chart chart-third">
+                                <canvas id="barChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="table">
+                            <div class="table__content">
+                                <div class="table__row table__row_six table__head">
+                                    <div class="table__col">Дата</div>
+                                    <div class="table__col">Переходы</div>
+                                    <div class="table__col">Потрачено</div>
+                                    <div class="table__col">Заказы</div>
+                                    <div class="table__col">Конверсия</div>
+                                    <div class="table__col">СРС</div>
+                                </div>
+            
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">01.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                <div class="table__row table__row_six">
+                                    <div class="table__col">101.01.2023</div>
+                                    <div class="table__col">123</div>
+                                    <a class="table__col table__arrow" href="#">50 000</a>
+                                    <div class="table__col">312</div>
+                                    <div class="table__col">30%</div>
+                                    <div class="table__col">0</div>
+                                </div>
+
+                                
+                            </div>
+            
+                        </div>
+
+                    </div>
+                    <div id="tablePowerUp" class="stats__table">
+                        <div class="table__content">
+                            <div class="table__row table__row_nine table__head">
+                                <div class="table__col">Дата</div>
+                                <div class="table__col">Время</div>
+                                <div class="table__col">Номер заказа</div>
+                                <div class="table__col">Артикул</div>
+                                <div class="table__col">Отмена</div>
+                                <div class="table__col">Регион</div>
+                                <div class="table__col">Продажа</div>
+                                <div class="table__col">Возврат</div>
+                                <div class="table__col">Реклама</div>
+                            </div>
+        
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <div class="table__row table__row_nine">
+                                <div class="table__col">01.01.2023</div>
+                                <div class="table__col">00:31</div>
+                                <div class="table__col">93456547642</div>
+                                <div class="table__col">142354313</div>
+                                <div class="table__col">Нет</div>
+                                <div class="table__col">Московская обл.</div>
+                                <div class="table__col">12.02.2023</div>
+                                <div class="table__col">нет</div>
+                                <div class="table__col">нет</div>
+                            </div>
+
+                            <button class="button button_pink">Показать еще</button>
+                            
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+		</div>
+
+		<!-- === FOOTER === -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<img src="images/logo-bacl.svg" alt="logo icon">
+				</div>
+				<div class="footer__main">
+
+					<div class="footer__item">
+						<h3 class="footer__title">Продукт</h3>
+						<ul class="footer__list">
+							<li><a class="footer__link" href="#">Домашняя страница</a></li>
+							<li><a class="footer__link" href="#">Отзывы</a></li>
+							<li><a class="footer__link" href="tarif.html">Тарифы</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<h3 class="footer__title">Помощь</h3>
+						<ul class="footer__list">
+							<li><a class="footer__link" href="#">База знаний</a></li>
+							<li><a class="footer__link" href="#">Интеграции</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<h3 class="footer__title">О Mplays</h3>
+						<ul class="footer__list">
+							<li><a class="footer__link" href="#">Компания</a></li>
+							<li><a class="footer__link" href="#">Вакансии</a></li>
+							<li><a class="footer__link" href="#">Блог</a></li>
+							<li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+							<li><a class="footer__link" href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="footer__bottom">2023 © Mplays</div>
+			</div>
+		</footer>
+
+			<!-- SIDEBAR -->
+
+			<div class="sidebar">
+				<div class="sidebar__inner">
+					<img class="sidebar__close" src="images/close.png" alt="close btn">
+					<nav class="sidebar__socials">
+						<a class="sidebar__socials-link" href="#">
+							<img src="images/tg.svg" alt="socials icon">
+						</a>
+	
+						<a class="sidebar__socials-link" href="#">
+							<img src="images/vkk.svg" alt="socials icon">
+						</a>
+	
+						<a class="sidebar__socials-link" href="#">
+							<img src="images/ins.svg" alt="socials icon">
+						</a>
+					</nav>
+					<nav class="sidebar__menu">
+						<a class="sidebar__link" href="#">Возможности</a>
+						<a class="sidebar__link" href="#">Отзывы</a>
+						<a class="sidebar__link" href="tarif.html">Тарифы</a>
+						<a class="sidebar__link" href="#">Блог</a>
+					</nav>
+				
+	
+					<div class="btns">
+						<a class="btn" href="#">
+							<img src="images/plaus.svg" alt="btn icon">
+							Регистрация
+						</a>
+						<a class="btn" href="#">
+							<img src="images/enter.svg" alt="btn icon">
+							Войти
+						</a>
+					</div>
+				</div>
+			</div>
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<script>
+            
+			const CHARTBAR = document.getElementById('barChart')
+			const barChart = new Chart(CHARTBAR, {
+				type: 'doughnut',
+				data: {
+					labels: ['Переходы', 'Конверсия', 'Выкупы'],
+					datasets: [{
+					data: [15, 7, 25],
+					fill: 'false',
+					backgroundColor: [
+					'#F47736',
+					'#6D58EA',
+					'#793f92'
+					],
+					borderWidth: 0,
+                    offset: 2
+				}]
+				},
+				options: {
+					maintainAspectRatio: false,
+                    plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        position: 'top',
+                        align: 'start',
+                        display: true,
+                        text: 'Romi',
+                    }
+                    }
+				}
+			});
+
+
+
+			const CHART = document.getElementById('lineChart')
+			const lineChart = new Chart(CHART, {
+				type: 'line',
+				data: {
+					labels: ['1', '5', '10', '15', '20', '25', '31'],
+					datasets: [{
+					label: 'Mplays stats',
+					data: [15, 7, 25, 13, 12, 35, 20],
+					fill: 'false',
+					borderColor: '#6D58EA',
+                    offset: 2
+
+				}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					plugins: {
+						legend: {
+						display: false
+						}
+					}
+				}
+			});
+
+            const CHART2 = document.getElementById('lineChart2')
+			const lineChart2 = new Chart(CHART2, {
+				type: 'line',
+				data: {
+					labels: ['1', '5', '10', '15', '20', '25', '31'],
+					datasets: [{
+					label: 'Mplays stats',
+					data: [15, 7, 25, 13, 12, 35, 20],
+					fill: 'false',
+					borderColor: '#6D58EA',
+				}]
+				},
+				options: {
+					maintainAspectRatio: false,
+					plugins: {
+						legend: {
+						    display: false,
+						},
+                        title: {
+                            position: 'top',
+                            align: 'start',
+                            display: true,
+                            text: 'Переходы',
+                        }
+					}
+				}
+
+                
+			});
+		</script>
+		<script src="js/script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const calendar = new VanillaCalendar('#calendar');
+              calendar.settings.lang = 'ru'
+              calendar.init();
+            });
+          </script>
+	</body>
+</html>

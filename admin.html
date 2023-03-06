@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<link rel="stylesheet" href="css/main.min.css" />
+		<title>MPLAYS - Аналитики и управление вашей рекламой для Wildberries и Ozon</title>
+		<link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="css/vanilla-calendar.min.css" />
+        <script src="js/vanilla-calendar.min.js" defer></script>   
+
+	</head>
+	<body>
+
+		<!-- === HEADER === -->
+		<header class="header header_white">
+			<div class="container">
+				<div class="header__inner">
+
+					<div class="header__left">
+						<a class="logo" href="/">
+							<img src="images/logo-bacl.svg" alt="logo">
+						</a>
+
+						<nav class="header__menu">
+							<a class="header__link" href="#">Возможности</a>
+							<a class="header__link" href="#">Отзывы</a>
+							<a class="header__link" href="#">Тарифы</a>
+							<a class="header__link" href="#">Блог</a>
+						</nav>
+					</div>
+
+					<div class="header__right">
+						<nav class="header__socials">
+							<a class="header__socials-link" href="#">
+								<img src="images/tg.svg" alt="socials icon">
+							</a>
+
+							<a class="header__socials-link" href="#">
+								<img src="images/vkk.svg" alt="socials icon">
+							</a>
+
+							<a class="header__socials-link" href="#">
+								<img src="images/ins.svg" alt="socials icon">
+							</a>
+						</nav>
+
+						
+						<div class="header__account">
+							<div class="header__profile">
+								<img class="header__avatar" src="images/profile.png" alt="profile">
+								<img class="header__arrow" src="images/arrow-down.svg" alt="arrow">
+
+							</div>
+
+							<ul class="header__dropdown">
+								<li class="header__item">
+									<a class="header__link" href="#">
+										<div class="header__wrap">
+											<img src="images/account.svg" alt="header icon">
+										</div>
+										Личный кабинет
+									</a>
+								</li>
+
+								<li class="header__item">
+									<a class="header__link" href="#">
+										<div class="header__wrap">
+											<img src="images/dogovor.svg" alt="header icon">
+										</div>
+										Договор
+									</a>
+								</li>
+
+								<li class="header__item">
+									<a class="header__link" href="#">
+										<div class="header__wrap">
+											<img src="images/leave.svg" alt="header icon">
+										</div>
+										Выход
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+
+					<img class="header__btn" src="images/menu-btn-d.svg" alt="btn">
+
+				</div>
+			</div>
+		</header>
+
+	
+
+		<div class="container">
+      
+            <div class="breadcrumb">
+                <a class="breadcrumb__link" href="#">Главная</a>
+                <div class="breadcrumb__now">Профиль</div>
+            </div>
+
+            <div class="divider">
+                <div class="aside">
+                    <div class="aside__box aside-profile">
+                        <img class="aside-profile__img" src="images/profile-img.png" alt="profile img">
+                        <div class="aside-profile__info">
+                            <div class="aside-profile__name">Ощепков Никита 
+                                Андреевич</div>
+                            <div class="aside-profile__balance">
+                                <div class="aside-profile__num">187 090</div>
+                                <div class="aside-profile__course">MP</div>
+                            </div>
+                            <a class="aside-profile__add" href="#">Пополнить баланс</a>
+                        </div>
+                    </div>
+                    <form class="aside__box aside__calendar">
+                        <div id="calendar"></div>
+						<select name="choosing">
+							<option selected disabled>Выбор клиента</option>
+							<option>Выбор клиента 1</option>
+							<option>Выбор клиента 2</option>
+							<option>Выбор клиента 3</option>
+						</select>
+
+						<button class="button button_violet">Скачать отчет</button>
+                    </form>
+                </div>
+                <div class="content">
+                    <form class="content__item">
+						<div class="content__top">
+							<h2 class="content__title">Профиль</h2>
+							<a class="content__link" href="#">Редактировать</a>
+						</div>
+
+						<div class="content-box">
+							<div class="content-box__row">
+								<div class="content-box__name">Почта:</div>
+								<div class="content-box__info">email@gmail.com</div>
+							</div>
+
+							<div class="content-box__row">
+								<div class="content-box__name">Телефон:</div>
+								<div class="content-box__info">+7 900 900 90 90</div>
+							</div>
+
+							<div class="content-box__row">
+								<div class="content-box__name">ИНН:</div>
+								<div class="content-box__info">34256758676</div>
+							</div>
+
+							<div class="content-box__row">
+								<div class="content-box__name">Магазин:</div>
+								<div class="content-box__info">WildBerries</div>
+							</div>
+
+							<div class="content-box__row">
+								<div class="content-box__name">Ваш iD:</div>
+								<div class="content-box__info">000005</div>
+							</div>
+						</div>
+					</form>
+                    <div class="content__item">
+						<h2 class="content__title">Реферальная ссылка</h2>
+						<p class="content__text">Вы можете получать до 15% бонусными баллами от пополнений тех кто зарегестрировался по вашей ссылке</p>
+						
+						<div class="content-copy">
+							<a class="content-copy__link" href="#" id="copyLink">https://mplays.ru/register?r=62f6182536f7e27</a>
+							<div class="content-copy__action" id="copyBtn">
+								Скопировать
+								<img src="images/copy.svg" alt="copy icon">
+							</div>
+						</div>
+					</div>
+                    <div class="content__item">
+						<div class="content__top">
+							<h2 class="content__title">База знаний</h2>
+							<a style="display: none;" class="content__link" href="#">Показать еще</a>
+						</div>
+
+						<div class="content__vids">
+							<div class="content__vid">
+								<iframe src="https://www.youtube.com/embed/f16J4TBUd0w" title="Что такое криптовалюты? Как они работают?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+								<div class="content__vidname">Обзор платформы</div>
+							</div>
+
+							<div class="content__vid">
+								<iframe src="https://www.youtube.com/embed/f16J4TBUd0w" title="Что такое криптовалюты? Как они работают?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+								<div class="content__vidname">Обзор платформы</div>
+							</div>
+
+							<div class="content__vid">
+								<iframe src="https://www.youtube.com/embed/f16J4TBUd0w" title="Что такое криптовалюты? Как они работают?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+								<div class="content__vidname">Обзор платформы</div>
+							</div>
+
+							<div class="content__vid">
+								<iframe src="https://www.youtube.com/embed/f16J4TBUd0w" title="Что такое криптовалюты? Как они работают?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+								<div class="content__vidname">Обзор платформы</div>
+							</div>
+
+							<div class="content__vid">
+								<iframe src="https://www.youtube.com/embed/f16J4TBUd0w" title="Что такое криптовалюты? Как они работают?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+								<div class="content__vidname">Обзор платформы</div>
+							</div>
+
+							<div class="content__vid">
+								<iframe src="https://www.youtube.com/embed/f16J4TBUd0w" title="Что такое криптовалюты? Как они работают?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+								<div class="content__vidname">Обзор платформы</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+
+
+		</div>
+
+		<!-- === FOOTER === -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<img src="images/logo-bacl.svg" alt="logo icon">
+				</div>
+				<div class="footer__main">
+
+					<div class="footer__item">
+						<h3 class="footer__title">Продукт</h3>
+						<ul class="footer__list">
+							<li><a class="footer__link" href="#">Домашняя страница</a></li>
+							<li><a class="footer__link" href="#">Отзывы</a></li>
+							<li><a class="footer__link" href="tarif.html">Тарифы</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<h3 class="footer__title">Помощь</h3>
+						<ul class="footer__list">
+							<li><a class="footer__link" href="#">База знаний</a></li>
+							<li><a class="footer__link" href="#">Интеграции</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__item">
+						<h3 class="footer__title">О Mplays</h3>
+						<ul class="footer__list">
+							<li><a class="footer__link" href="#">Компания</a></li>
+							<li><a class="footer__link" href="#">Вакансии</a></li>
+							<li><a class="footer__link" href="#">Блог</a></li>
+							<li><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+							<li><a class="footer__link" href="#">Пользовательское соглашение</a></li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="footer__bottom">2023 © Mplays</div>
+			</div>
+		</footer>
+
+			<!-- SIDEBAR -->
+
+			<div class="sidebar">
+				<div class="sidebar__inner">
+					<img class="sidebar__close" src="images/close.png" alt="close btn">
+					<nav class="sidebar__socials">
+						<a class="sidebar__socials-link" href="#">
+							<img src="images/tg.svg" alt="socials icon">
+						</a>
+	
+						<a class="sidebar__socials-link" href="#">
+							<img src="images/vkk.svg" alt="socials icon">
+						</a>
+	
+						<a class="sidebar__socials-link" href="#">
+							<img src="images/ins.svg" alt="socials icon">
+						</a>
+					</nav>
+					<nav class="sidebar__menu">
+						<a class="sidebar__link" href="#">Возможности</a>
+						<a class="sidebar__link" href="#">Отзывы</a>
+						<a class="sidebar__link" href="tarif.html">Тарифы</a>
+						<a class="sidebar__link" href="#">Блог</a>
+					</nav>
+				
+	
+					<div class="btns">
+						<a class="btn" href="#">
+							<img src="images/plaus.svg" alt="btn icon">
+							Регистрация
+						</a>
+						<a class="btn" href="#">
+							<img src="images/enter.svg" alt="btn icon">
+							Войти
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+		<div id="copyModal" class="copy-modal">Ссылка скопирована!</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/script.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              const calendar = new VanillaCalendar('#calendar');
+              calendar.settings.lang = 'ru'
+              calendar.init();
+            });
+          </script>
+	</body>
+</html>

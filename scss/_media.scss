@@ -1,0 +1,1032 @@
+@media(max-width: 1500px){
+    .container{
+        padding: 0 80px;
+    }
+
+    .main{
+        height: 70vh;
+        &__title{
+            font-size: 30px;
+            line-height: 120%;
+        }
+
+        &__text{
+            font-size: 14px;
+            width: 70%;
+            padding-right: 30px;
+        }
+
+        &__afisha{
+            right: 0;
+            font-size: 25px;
+        }
+    }
+
+    .banners{
+        &__item{
+            height: fit-content;
+        }
+
+        &__metr{
+            width: 300px;
+        }
+    }
+
+    .main{
+        background-position: right 5% bottom 25%, right 30% top , center center;
+        background-size: 350px, 300px, 100% 100%;
+       
+    }
+
+    .content{
+        &__vids{
+            grid-template-columns: 1fr 1fr;
+            iframe{
+                width: 100%;
+            }
+        }
+    }
+
+    .table{
+        &__row_normal{
+            grid-template-columns: 40px 1fr 1fr 0.3fr 0.3fr 0.3fr;
+        }
+    }
+
+}
+
+@media(max-width: 1300px){
+    .stats{
+        &__content{
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
+        &__info{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        
+    }
+}
+
+@media(max-width: 1100px){
+    .container{
+        padding: 0 50px;
+    }
+
+    .header{
+        &__inner{
+            gap: 30px;
+        }
+
+        &__btn{
+            display: flex;
+        }
+    }
+
+    .header{
+        .header__right,
+        .header__menu{
+            display: none;
+        }
+    }
+
+    .sidebar{
+        display: block;
+    }
+
+    .main{
+        &__inner{
+            width: 70%;
+        }
+
+        &__afisha{
+            right: 0;
+        }
+
+    }
+
+    .services{
+        &__inner{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .tariff{
+        &__inner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__card{
+            width: 300px;
+        }
+    }
+
+    .banners{
+        &__metr{
+            height: 100px;
+            object-fit: contain;
+        }
+
+        &__item{
+            height: fit-content;
+            grid-template-columns: 1fr;
+            padding: 20px;
+
+            &:nth-child(1),
+            &:nth-child(3){
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        &__socials{
+            position: relative;
+            left: 0;
+            top: 0;
+            right: 0;
+            &:nth-child(1){
+                display: none;
+            }
+
+            &:nth-child(2){
+                top: -50px;
+            }
+
+            &:nth-child(3){
+                top: 0;
+            }
+        }
+
+        &__title{
+            width: 100%;
+        }
+
+        &__db{
+            position: relative;
+            height: 200px;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .main{
+        background-position: right 5% bottom 25%, right 20% top 10% , center center;
+        background-size: 250px, 200px ,cover;
+    }
+
+    .create{
+        &__bottom{
+            align-items: flex-start;
+        }
+        &__btns{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            .button{
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+@media(max-width: 980px){
+    .divider{
+        grid-template-columns: 1fr;
+    }
+
+    .vanilla-calendar{
+        width: 100%!important;
+    }
+
+   
+
+
+    .table{
+        &__top{
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__action{
+            width: 100%;
+
+            .button{
+                width: max-content;
+                white-space: wrap;
+            }
+        }
+
+        &__wrapper{
+            flex: 1;
+            width: fit-content;
+        }
+
+
+        
+
+        &__row_normal{
+            grid-template-columns: 40px 1fr 1fr 0.3fr 0.3fr 0.3fr;
+        }
+
+        &__row_six{
+            &.table__head{
+                display: none;
+            }
+        }
+
+        &__row_six{
+            grid-template-columns: unset;
+            grid-template-areas: 
+            'date transfer'
+            'spend spend'
+            'offer offer'
+            'converse converse'
+            'cpc cpc'
+
+            ;
+            gap: 0;
+            margin-bottom: 30px;
+            background: #FFFFFF;
+            border: 1px solid #ECECEC;
+            border-radius: 8px;
+            padding: 10px;
+
+            .table__col{
+                &::after{
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 13px;
+                }
+            }
+            .table__col:nth-child(1){
+                background: rgba(126, 126, 128, 0.3);
+                border-radius: 4px;
+                color: #fff;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: date;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+    
+            .table__col:nth-child(2){
+                grid-area: transfer;
+                position: relative;
+                text-align: right;
+                 &::after{
+                    content: 'Переходы:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 5px;
+                }
+            }
+    
+            .table__col:nth-child(3){
+                grid-area: spend;
+                padding-left: 100px;
+                margin-left: 0;
+                &::after{
+                    content: 'Потрачено:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0;
+                }
+
+                &::before{
+                    left: 80px;
+                }
+            }
+    
+            .table__col:nth-child(4){
+                grid-area: offer;
+                position: relative;
+                padding-left: 80px;
+                &::after{
+                    content: 'Переходы:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0;
+                }
+
+            }
+    
+            .table__col:nth-child(5){
+                grid-area: converse;
+                padding-left: 60px;
+                position: relative;
+                &::after{
+                    content: 'Заказы:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(6){
+                grid-area: cpc;
+                padding-left: 40px;
+                position: relative;
+                &::after{
+                    content: 'CPC:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+        }
+
+        &__row_nine{
+            &.table__head{
+                display: none;
+            }
+            grid-template-columns: unset;
+            grid-template-areas: 
+            'date time'
+            'offer offer'
+            'art art'
+            'cancel cancel'
+            'region region'
+            'sold sold'
+            'ads ads'
+            'back back'
+
+            ;
+            gap: 0;
+            margin-bottom: 30px;
+            background: #FFFFFF;
+            border: 1px solid #ECECEC;
+            border-radius: 8px;
+            padding: 10px;
+
+            .table__col{
+                &::after{
+                    top: 50%;
+                    transform: translateY(-50%);
+                    font-size: 13px;
+                }
+            }
+            .table__col:nth-child(1){
+                border-radius: 8px 0 0 8px;
+                color: #fff;
+                width: 100%;
+                background: rgba(126, 126, 128, 0.3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: date;
+            }
+    
+            .table__col:nth-child(2){
+                border-radius: 0 8px 8px 0;
+                grid-area: time;
+                position: relative;
+                background: rgba(126, 126, 128, 0.3);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+            }
+    
+            .table__col:nth-child(3){
+                grid-area: offer;
+                padding-left: 100px;
+                position: relative;
+                &::after{
+                    content: 'Номер заказа:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+    
+            .table__col:nth-child(4){
+                grid-area: art;
+                position: relative;
+                padding-left: 60px;
+                &::after{
+                    content: 'Артикул:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0;
+                }
+
+            }
+    
+            .table__col:nth-child(5){
+                grid-area: cancel;
+                padding-left: 60px;
+                position: relative;
+                &::after{
+                    content: 'Отмена:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(6){
+                grid-area: region;
+                padding-left: 60px;
+                position: relative;
+                &::after{
+                    content: 'Регион:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(7){
+                grid-area: sold;
+                padding-left: 70px;
+                position: relative;
+                &::after{
+                    content: 'Продажи:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(8){
+                grid-area: ads;
+                padding-left: 65px;
+                position: relative;
+                &::after{
+                    content: 'Возврат:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(9){
+                grid-area: back;
+                padding-left: 65px;
+                position: relative;
+                &::after{
+                    content: 'Реклама:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+        }
+
+        &__row_nines{
+            background: #FFFFFF;
+            border: 1px solid #ECECEC;
+            border-radius: 8px;
+            padding: 10px;
+            &.table__head{
+                display: none;
+            }
+            grid-template-columns: unset;
+            grid-template-areas: 
+            'number link1 action'
+            'number link link'
+            'move move move'
+            'transfer transfer transfer'
+            'offer offer offer'
+            'from from from'
+            'to to to';
+            gap: 0;
+            .table__col:nth-child(1){
+                background: rgba(126, 126, 128, 0.3);
+                border-radius: 4px;
+                color: #fff;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: number;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+    
+            .table__col:nth-child(2){
+                grid-area: link1;
+            }
+    
+            .table__col:nth-child(3){
+                grid-area: move;
+                position: relative;
+                padding-left: 110px;
+                &::after{
+                    content: 'Всего переходов:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+    
+            .table__col:nth-child(4){
+                grid-area: transfer;
+                position: relative;
+                padding-left: 115px;
+                &::after{
+                    content: 'Переходов за 24ч:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0;
+                }
+
+            }
+    
+            .table__col:nth-child(5){
+                grid-area: offer;
+                padding-left: 50px;
+                position: relative;
+                &::after{
+                    content: 'Заказы:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(6){
+                grid-area: link;
+            }
+
+            .table__arrow{
+                margin-left: 0;
+            }
+
+            .table__col:nth-child(7){
+                grid-area: from;
+                padding-left: 50px;
+                position: relative;
+                &::after{
+                    content: 'Откуда:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+            }
+
+            .table__col:nth-child(8){
+                grid-area: to;
+                padding-left: 70px;
+                position: relative;
+                &::after{
+                    content: 'Откуда:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+
+                &::before{
+                    left: 50px;
+                }
+            }
+
+            .table__col:nth-child(9){
+                grid-area: action;
+            }
+        }
+
+        
+        &__content{
+            width: 100%;
+            overflow-x: auto;
+            gap: 20px;
+            display: flex;
+            .table__row{
+                flex:1;
+                min-width: 300px;
+            }
+
+            &_normal{
+                overflow-x: visible;
+                flex-direction: column;
+                .table__row{
+                    flex:unset;
+                    min-width: unset;
+                    background: #FFFFFF;
+                    border-radius: 8px;
+                    padding: 10px;
+                    border: 1px solid #ECECEC;
+                }
+            }
+
+        }
+
+
+    }
+
+}
+
+@media(max-width: 768px){
+    .container{
+        padding: 0 30px;
+    }
+
+    .main{
+        &__inner{
+            width: 100%;
+        }
+    }
+
+    .services{
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .banners{
+        &__socials{
+            height: 100px;
+            width: 100px;
+        }
+
+        &__title{
+            font-size: 23px;
+            line-height: 120%;
+        }
+
+        &__item{
+            gap: 15px;
+        }
+
+        &__db{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .tariff{
+        padding-bottom: 20px;
+        &__wrapper{
+            overflow-x: auto;
+        }
+        &__inner{
+            width: fit-content;
+            display: inline-flex;
+            flex-wrap: nowrap;
+        }
+
+        &__card{
+            width: 300px;
+            flex: 1;
+        }
+    }
+
+    .main{
+        background-image: url('../images/header-bg.png');
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .divider{
+        grid-template-columns: 1fr;
+    }
+
+    .table{
+        &__row_normal{
+            grid-template-columns: unset;
+            grid-template-areas: 
+            'number name action'
+            'number link link'
+            'number transfer offer'
+            ;
+            gap: 0;
+            .table__col:nth-child(1){
+                background: rgba(126, 126, 128, 0.3);
+                border-radius: 4px;
+                color: #fff;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: number;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+    
+            .table__col:nth-child(2){
+                grid-area: name;
+            }
+    
+            .table__col:nth-child(3){
+                grid-area: link;
+
+            }
+    
+            .table__col:nth-child(4){
+                grid-area: transfer;
+                justify-self: end;
+                position: relative;
+                &::after{
+                    content: 'Переходы:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: -90px;
+                }
+
+            }
+    
+            .table__col:nth-child(5){
+                grid-area: offer;
+                padding-left: 80px;
+                position: relative;
+                &::after{
+                    content: 'Заказы:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+
+                &::before{
+                    left: 60px;
+                }
+            }
+
+            .table__col:nth-child(6){
+                grid-area: action;
+            }
+        }
+
+        &__row_more{
+            grid-template-columns: unset;
+            grid-template-areas: 
+            'number name action'
+            'number link link'
+            'number transfer transfer'
+            'offer offer offer'
+            ;
+            gap: 0;
+            .table__col:nth-child(1){
+                background: rgba(126, 126, 128, 0.3);
+                border-radius: 4px;
+                color: #fff;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                grid-area: number;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+    
+            .table__col:nth-child(2){
+                grid-area: name;
+            }
+    
+            .table__col:nth-child(3){
+                grid-area: link;
+
+            }
+    
+            .table__col:nth-child(4){
+                grid-area: transfer;
+                justify-self: start;
+                position: relative;
+                &::after{
+                    content: 'Почта:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: -60px;
+                }
+
+            }
+    
+            .table__col:nth-child(5){
+                grid-area: offer;
+                padding-left: 80px;
+                position: relative;
+                &::after{
+                    content: 'Баланс:';
+                    color: #3D4657;
+                    position: absolute;
+                    left: 0px;
+                }
+
+                &::before{
+                    left: 60px;
+                }
+            }
+
+            .table__col:nth-child(6){
+                grid-area: action;
+            }
+        }
+
+        &__head{
+            display: none;
+        }
+
+        &__wrapper{
+            width: 100%;
+        }
+
+        &__action{
+            flex-direction: column;
+            gap: 5px;
+            
+            .button{
+                width: 100%;
+            }
+        }
+
+    }
+
+    .pagination{
+        &__num{
+            height: 28px;
+        }
+    }
+
+    .create{
+        &__inner{
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        &__btns{
+            flex-direction: column;
+        }
+
+        .button{
+            display: block;
+            width: fit-content;
+        }
+
+        &__bottom{
+            flex-direction: column;
+            gap: 10px;
+        }
+
+    }
+
+    .stats{
+        &__top{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__action{
+            position: relative;
+            .stats-more{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .button{
+                font-size: 12px;
+            }
+        }
+        &__named_overflow{
+            overflow-x: hidden;
+            .link-arrow{
+                display: flex;
+                width: 100%;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
+              }
+        }
+
+        &__btns{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .content{
+        &__vids{
+            grid-template-columns: 1fr;
+            iframe{
+                height: 211px;
+            }
+        }
+
+        &__arrow{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 99;
+            &:first-child{
+                left: -15px;
+            }
+            &:last-child{
+                right: -15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 480px){
+    .container{
+        padding: 0 15px;
+    }
+
+    .tariff{
+        &__form{
+            display: flex;
+            flex-direction: column;
+            input{
+                width: 100%;
+            }
+
+            .btn{
+                width: 100%;
+            }
+        }
+    }
+
+    
+
+    .content-copy{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: #fff;
+        &__link{
+            display: block;
+            margin-bottom: 12px;
+            padding: 14px 12px;
+            font-size: 13px;
+            background-color: #fff;
+            background: #FAFAFD;
+            border: 1px solid rgba(110, 117, 122, 0.08);
+            border-radius: 4px;
+            height: 100%;
+        }
+        &__action{
+            background-color: #6D58EA;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            border-radius: 4px;
+            img{
+                filter: brightness(500%);
+            }
+        }
+    }
+
+    .stats{
+        .calendar-popup{
+            left: 0;
+            top: 20px;
+        }
+    }
+
+
+
+    .main{
+        height: fit-content;
+        padding: 100px 0;
+        background-image: url('../images/main-bg.webp');
+        background-size: 100% 100%;
+        &__afisha{
+            top: -30px;
+            right: 20px;
+            position: absolute;
+        }
+
+        &__title{
+            padding-right: 100px;
+        }
+
+        &__content{
+            align-items: flex-start;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__text{
+            padding-top: 20px;
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    .footer{
+        &__main{
+            flex-direction: column;
+        }
+    }
+
+    .header__btn{
+        height: 30px;
+        width: 30px;
+    }
+
+}

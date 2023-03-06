@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap; 
+    src: local('Inter'),
+        url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/Inter-Regular.ttf') format('truetype'),
+        url('../fonts/Inter-Regular.eot') format('embedded-opentype');
+        unicode-range: U+000-5FF; 
+}
+
+%font_normal{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+
+// MEDIUM
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap; 
+    src: local('Inter'),
+        url('../fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/Inter-Medium.ttf') format('truetype'),
+        url('../fonts/Inter-Medium.eot') format('embedded-opentype');
+        unicode-range: U+000-5FF; 
+}
+
+
+%font_medium{
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+// SEMIBOLD
+
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap; 
+    src: local('Inter'),
+        url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/Inter-SemiBold.woff') format('woff'),
+        url('../fonts/Inter-SemiBold.ttf') format('truetype'),
+        url('../fonts/Inter-SemiBold.eot') format('embedded-opentype');
+        unicode-range: U+000-5FF; 
+}
+
+%font_semi{
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+// BOLD
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap; 
+    src: local('Inter'),
+        url('../fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/Inter-Bold.ttf') format('truetype'),
+        url('../fonts/Inter-Bold.eot') format('embedded-opentype');
+        unicode-range: U+000-5FF; 
+}
+
+%font_bold{
+    font-family: 'Inter';
+    font-weight: 700;
+}
